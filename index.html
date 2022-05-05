@@ -1,1 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/style.css" rel="stylesheet">
+    <title>Maxime's To Do List</title>
+</head>
+<body>
+    <header>
+        <h1>Maxime's To Do List</h1>
+        <form id="task-form">
+            <input type="text" id="task-input" placeholder="What else is left to do? / Qu'est-ce qu'on a à faire?">
+            <input type="submit" value="ADD / AJOUTER" id="taks-submit">
+        </form>
+    </header>
+    <main>
+        <section class="task-list">
+            <h2>TASKS / À FAIRE</h2>
+            <div id="tasks">
+                <div class="task">
+                    <div class="content">
+                        <input type="text" value="My Task" class="text" readonly>
+                    </div>
+                    <div class="actions">
+                        <button class="edit">Edit / Modifier</button>
+                        <button class="delete">Delete / Supprimer</button>
+                    </div>
+                </div>
 
+            </div>
+        </section>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>
