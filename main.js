@@ -51,16 +51,17 @@ window.addEventListener('load', () =>{
 
         task_edit_elm.addEventListener('click', () => {
             if (task_edit_elm.innerText == "Edit / Modifier") {
-                task_input_elm.removeAttribute("readonly"); /* will remove the readonly attribute so we can edit it */
+                task_input_elm.removeAttribute("readonly");
                 task_input_elm.focus();
-                task_edit_elm.innerText = "Save";
+                task_edit_elm.innerText = "Save / Sauvegarder";
             } else {
-                console.log("Save");
+                task_input_elm.setAttribute("readonly" , "readonly");
+                task_edit_elm.innerText = "Edit / Modifier";
             }
         });
 
         task_delete_elm.addEventListener('click', () => {
             list_elm.removeChild(task_elm);
         });
-    })
-})
+    });
+});
